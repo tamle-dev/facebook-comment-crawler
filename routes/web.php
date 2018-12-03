@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'Services\OtherController@getComment')->name('getComment');
+Route::post('/', 'Services\OtherController@getComment');
+
