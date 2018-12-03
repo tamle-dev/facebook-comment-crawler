@@ -18,3 +18,5 @@
 Route::get('/', 'Services\OtherController@getComment')->name('getComment');
 Route::post('/', 'Services\OtherController@getComment');
 
+Route::get('/test', 'Services\OtherController@test')->name('1');
+

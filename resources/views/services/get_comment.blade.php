@@ -16,7 +16,7 @@
   <form method="POST" action="{{route('getComment')}}">
     {{csrf_field()}}
     <div class="form-group">
-      <input placeholder="ID" type="text" name="id" class="form-control">
+      <input placeholder="ID" type="text" name="link" class="form-control">
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-success">GET COMMENT</button>
