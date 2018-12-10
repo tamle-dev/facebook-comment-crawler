@@ -13,10 +13,16 @@
 <div class="container">
   <h1><b>GET COMMENT</b></h1>
   <br>
+  @if( Session::has( 'warning' ))
+  <div class="alert alert-danger alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    {{ Session::get( 'warning' ) }}
+  </div>
+  @endif
   <form method="POST" action="{{route('getComment')}}">
     {{csrf_field()}}
     <div class="form-group">
-      <input placeholder="ID" type="text" name="link" class="form-control">
+      <input placeholder="Link bài viết" type="text" name="link" class="form-control">
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-success">GET COMMENT</button>

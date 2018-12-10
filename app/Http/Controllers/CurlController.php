@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 DEFINE("DEFAULT_TOKEN"  ,"EAAAAAYsX7TsBAPZCdoa30la3PqzinaxrCfimeHH23ln6q9CKB3tf9C5SoFiVHTEJP6QbkKNze1AIEkZB7mua9EAfKDrZCiDxI9YzUMzKDTOvRI3rCbnRMWWj9r3X1uHw6YAZCGbocWvMOEIvZBJzXuSjCW8USIjnNNHTBdE1cvbb6kRchkT4Jl7cOV57YXONbbSUqE4bQxUqJAZAaq8VoZB");
 
+DEFINE("URL_GRAPH_V10"  ,"https://graph.facebook.com/v1.0/");
+
 class CurlController extends Controller
 {
     private $args 			= array(
